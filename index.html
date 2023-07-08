@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        @font-face {
+            font-family: Alexandria;
+            src: url("fonts/Alexandria-VariableFont_wght.ttf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Alexandria;    
+            direction: rtl;
+            height: 100vh;
+        }
+
+        .service_detials{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        .service_detials .num{
+        padding-right: 3px;
+        color: #FCB354;
+        font-weight: 400;
+        font-size: 12px;
+        }
+        .card-title {
+            font-weight: 400;
+            font-size: 12px;
+            padding-top: 10px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-weight: 300;
+            font-size: 12px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .service-img{
+            height: 700px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .service-img img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .service_detials{
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+        }
+        .service-details > div{
+            align-items: center;
+            /* justify-content: space-around; */
+        }
+        .service-details > div > p{
+       
+            flex-basis: 50%;
+        }
+        .service-details > div > p:nth-of-type(2) , .user-img span{
+            color: rgba(15, 15, 15, 0.3);
+        }
+        .service-user p{
+            color: #FCB354;
+            font-weight: 400;
+            font-size: 16px;
+          
+        }
+        .user-img p{
+            color: #0f0f0f;
+            margin-right: 10px;
+            
+            font-size: 12px;
+        }
+        .user-img span{
+            margin-right: 10px;
+        }
+        .img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        .img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .service-user{
+            padding: 10px 30px;
+        }
+        button[type="submit"] {
+            background: #EE8454 !important;
+            border-radius: 100px;
+            border: 1.5px solid rgba(15, 15, 15, 0.10);
+            color: #fff !important;
+            width: 350px;
+            height: 50px;
+            margin: auto;
+            display: block;
+        }
+        .msg{
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: green;
+            border-radius: 50%;
+        }
+        .card-footer{
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="service-img">
+        <img src="images/Rectangle 88.png" width="100%" alt="">
+    </div>
+    <div class="service_detials" style="padding-top: 30px;">
+        <div class="card-data me-3" style="flex-basis:55%;">
+            <p class="num">4.5</p>
+            <h3 class="card-title">ساكتب لك قصيدة 500 كلمة بالشعر الفصيح</h3>
+            <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى .....</p>
+            <hr>
+            <div class="service-details">
+                <div class="d-flex">
+                    <p>عدد مرات الطلب</p>
+                    <p>23</p>
+                </div>
+                <div class="d-flex">
+                    <p>مدة التسليم</p>
+                    <p>يوم واحد</p>
+                </div>
+                <div class="d-flex">
+                    <p>طلبات جارى تنفيذها</p>
+                    <p>2</p>
+                </div>
+            </div>
+            <hr>
+            <div class="service-user">
+                <p>صاحب الخدمة</p>
+                <div class="d-flex justify-content-between mt-4">
+                    <div class="user-img d-flex align-items-center">
+                        <div class="img">
+                            <img src="images/Ellipse 12.png" alt="">
+                        </div>
+                        
+                        <div class="detail">
+                            <p>محمد احمد ابراهيم</p>
+                                <span>شاعر</span>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="works-file">
+                        <a><img src="images/Group 29.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer pt-3 d-flex justify-content-between align-items-center">
+                <button type="submit" class="btn">شراء بـ( 125 ريال )</button>
+                <div class="msg">
+                <img src="images/solar_chat-line-broken.png" width="30px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+               
+ 
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+ 
+
+</body>
+</html>
